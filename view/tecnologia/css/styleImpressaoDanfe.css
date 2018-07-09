@@ -1,0 +1,217 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+body {
+  background-color: #464646;
+}
+ 
+.danfe {
+  width: 75%;
+  min-width: 960px;
+  margin: 10px auto;
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+}
+ 
+.blocos {
+  position: relative;
+  z-index: 20;
+}
+ 
+.marca-dagua {
+  margin: auto;
+  position: absolute;
+  top: 500px; left: 0; bottom: 0; right: 0;
+  max-height: 0;
+  z-index: 10;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #DCDCDC;
+}
+ 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto;
+}
+ 
+table th,
+table td {
+  border: 1px solid black;
+}
+ 
+table th {
+  font-size: 60%;
+  text-transform: uppercase;
+  padding: 10px 5px;
+}
+ 
+table td {
+  height: 45px;
+  vertical-align: top;
+  padding: 0 5px;
+}
+ 
+/* colunas */
+ 
+.inscricao-estadual,
+.inscricao-estadual-st,
+.cnpj {
+  width: 33.3%;
+}
+ 
+.canhoto-numero-nfe {
+  width: 25%;
+  padding: 0 20px;
+}
+ 
+.tipo-danfe {
+  width: 10%;
+}
+ 
+.codigo-barras,
+.chave-acesso,
+.consulta-sefaz,
+.numero-registro-dpec,
+.endereco {
+  width: 40%;
+}
+ 
+.data-recebimento,
+.data-emissao,
+.data-entrada-saida, 
+.hora-saida,
+.cep,
+.imposto,
+.frete-por-conta,
+.codigo-antt,
+.transportador-cnpj-cpf,
+.transportador-inscricao-estadual,
+.volumes {
+  width: 16.666666%
+}
+ 
+.observacoes {
+  width: 50%;
+  height: 200px;
+}
+ 
+/* Blocos */
+.tipo-danfe {
+  padding: 0 10px;
+}
+.tipo-danfe .descricao-sigla {
+  padding: 0 10px 5px;
+}
+ 
+.tipo-danfe .titulo-campo:not(.center-align),
+.entrada-saida-valor {
+  font-size: 0.7rem !important;
+}
+ 
+.entrada-saida-valor {
+  display: inline-block;
+  float: right;
+  margin: -30px 0;
+  border: 1px solid black;
+  padding: 5px;
+}
+ 
+.codigo-barras {
+  padding: 10px;
+}
+ 
+.consulta-sefaz {
+  font-size: 0.9rem;
+}
+ 
+.emitente {
+  padding: 4px 20px 14px 20px;
+}
+ 
+.produtos {
+  height: 500px;
+}
+ 
+.produtos tbody td {
+  font-size: 0.8rem;
+}
+ 
+/* helpers */
+ 
+.linha-tracejada {
+  border-bottom: #000 1px dashed;
+  margin: 10px auto;
+}
+ 
+.titulo-bloco {
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+ 
+.titulo-campo,
+.texto-campo {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+}
+ 
+.titulo-campo {
+  margin: 5px 0;
+}
+ 
+.texto-campo {
+  font-family: "Courier New", Courier, monospace;
+  margin-top: 5px;
+}
+ 
+.titulo-campo.negrito,
+.texto-campo.negrito {
+  font-size: 1.0rem;
+  font-weight: bold;
+}
+ 
+.sem-borda-topo {
+  border-top: none;
+}
+ 
+.left-align {
+  text-align: left;
+}
+ 
+.right-align {
+  text-align: right;
+}
+ 
+.center-align {
+  text-align: center;
+}
+ 
+.valign-middle {
+  vertical-align: middle;
+}
+ 
+/* media queries */
+ 
+@media only screen and (max-width : 1024px) {
+  .chave-acesso .texto-campo {
+    font-size: 65% !important;
+  }
+   
+  .consulta-sefaz p {
+    font-size: 80%;
+  }
+   
+  .titulo-campo,
+  .texto-campo {
+    font-size: 70%;
+  }
+}
